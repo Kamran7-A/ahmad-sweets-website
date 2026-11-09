@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmad Sweets & Karyana Store</title>
+<meta name="description" content="Fresh sweets, bakery treats, groceries and everyday essentials from Ahmad Sweets & Karyana Store.">
+<style>
+:root{--green:#155e43;--green2:#207653;--cream:#fffaf0;--gold:#e8b84c;--ink:#1f2b24;--muted:#657168}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+header{background:var(--green);color:#fff;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.1rem}.brand small{display:block;font-size:.75rem;font-weight:500;color:#d9eadf}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:.95rem}
+.hero{padding:64px 6%;background:linear-gradient(120deg,#155e43,#287b57);color:white;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.08;margin:0 0 18px}.hero p{max-width:600px;color:#e6f2e9;font-size:1.08rem}
+.tag{display:inline-block;background:#ffffff1c;border:1px solid #ffffff55;padding:7px 13px;border-radius:30px;font-size:.85rem;margin-bottom:18px}
+.hero-art{background:#f8e9c8;color:var(--green);border-radius:28px;padding:30px;text-align:center;box-shadow:0 16px 40px #062d1d44}
+.hero-art .emoji{font-size:5rem}.hero-art strong{display:block;font-size:1.3rem}.hero-art span{font-size:.9rem}
+.btn{display:inline-block;background:var(--gold);color:#2b281b;text-decoration:none;font-weight:800;padding:13px 20px;border-radius:12px;margin:8px 8px 0 0}
+.btn.alt{background:white;color:var(--green)}
+section{padding:48px 6%}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap;margin-bottom:22px}
+h2{font-size:clamp(1.6rem,3vw,2.3rem);margin:0;color:var(--green)}.sub{color:var(--muted);margin:6px 0 0}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category{background:white;border:1px solid #eee5d3;border-radius:18px;padding:22px;text-align:center}.category b{display:block;margin-top:8px}.category .emoji{font-size:2.1rem}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:white;border:1px solid #eee5d3;border-radius:18px;overflow:hidden}.product .photo{height:140px;background:#f2e8d5;display:grid;place-items:center;font-size:3.3rem}.product .info{padding:16px}.product h3{margin:0 0 5px;font-size:1.05rem}.product p{margin:0 0 12px;color:var(--muted);font-size:.9rem}.price{font-weight:800;color:var(--green)}.order{display:block;text-align:center;background:var(--green);color:white;padding:10px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:12px}
+.note{background:#f5eddb;border-radius:14px;padding:14px 18px;color:#5c543e;font-size:.92rem;margin-top:18px}
+.about{background:#f1ead9;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.about-card{background:white;padding:26px;border-radius:20px}
+.contact{background:var(--green);color:white}.contact h2{color:white}.contact p{color:#e3eee6}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{background:#ffffff14;border:1px solid #ffffff30;border-radius:18px;padding:22px}
+footer{padding:22px 6%;background:#104632;color:#d9e9df;font-size:.9rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){.hero,.about{grid-template-columns:1fr}.categories,.products{grid-template-columns:repeat(2,1fr)}nav a{margin-left:8px}}
+@media(max-width:480px){.categories,.products{grid-template-columns:1fr 1fr}.product .photo{height:110px}.hero{padding-top:42px;padding-bottom:42px}section{padding:36px 5%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">🍬 Ahmad Sweets & Karyana Store<small>Sweet moments • Everyday essentials</small></div>
+  <nav><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <span class="tag">Your neighborhood shop</span>
+    <h1>Fresh sweets.<br>Daily essentials.</h1>
+    <p>From delicious mithai and bakery treats to grocery staples for your home, find your everyday favorites at Ahmad Sweets & Karyana Store.</p>
+    <a class="btn" href="#products">Explore products</a>
+    <a class="btn alt" href="#contact">Contact the store</a>
+  </div>
+  <div class="hero-art"><div class="emoji">🍬 🛒 🍪</div><strong>A little sweetness, every day</strong><span>Shop local. Shop with care.</span></div>
+</section>
+<section>
+  <div class="section-head"><div><h2>Shop by category</h2><p class="sub">A little something for every home and every occasion.</p></div></div>
+  <div class="categories">
+    <div class="category"><div class="emoji">🍥</div><b>Sweets & Mithai</b></div>
+    <div class="category"><div class="emoji">🥐</div><b>Bakery & Snacks</b></div>
+    <div class="category"><div class="emoji">🛒</div><b>Karyana & Grocery</b></div>
+    <div class="category"><div class="emoji">☕</div><b>Tea & Beverages</b></div>
+  </div>
+</section>
+<section id="products">
+  <div class="section-head"><div><h2>Popular picks</h2><p class="sub">Replace these sample items and prices with your actual store products.</p></div></div>
+  <div class="products">
+    <article class="product"><div class="photo">🍥</div><div class="info"><h3>Assorted Mithai</h3><p>Traditional sweets for sharing and celebrations.</p><div class="price">Price: Ask us</div><a class="order" href="https://wa.me/923000000000?text=Hello%2C%20I%20want%20to%20ask%20about%20Assorted%20Mithai." target="_blank" rel="noopener">Ask on WhatsApp</a></div></article>
+    <article class="product"><div class="photo">🍪</div><div class="info"><h3>Fresh Biscuits</h3><p>A tasty companion for tea time.</p><div class="price">Price: Ask us</div><a class="order" href="https://wa.me/923000000000?text=Hello%2C%20I%20want%20to%20ask%20about%20Fresh%20Biscuits." target="_blank" rel="noopener">Ask on WhatsApp</a></div></article>
+    <article class="product"><div class="photo">🌾</div><div class="info"><h3>Flour & Staples</h3><p>Everyday kitchen essentials.</p><div class="price">Price: Ask us</div><a class="order" href="https://wa.me/923000000000?text=Hello%2C%20I%20want%20to%20ask%20about%20Flour%20and%20Staples." target="_blank" rel="noopener">Ask on WhatsApp</a></div></article>
+    <article class="product"><div class="photo">☕</div><div class="info"><h3>Tea & Sugar</h3><p>Stock up on daily favorites.</p><div class="price">Price: Ask us</div><a class="order" href="https://wa.me/923000000000?text=Hello%2C%20I%20want%20to%20ask%20about%20Tea%20and%20Sugar." target="_blank" rel="noopener">Ask on WhatsApp</a></div></article>
+  </div>
+  <div class="note">Online ordering is set up as a WhatsApp inquiry. Add your real WhatsApp number and current prices before publishing. Product photos and descriptions can be updated anytime.</div>
+</section>
+<section class="about" id="about">
+  <div><h2>About our store</h2><p>Welcome to Ahmad Sweets & Karyana Store — your friendly local stop for sweet treats, grocery essentials, and everyday needs. We aim to serve our community with care, quality, and a warm smile.</p><p>Visit us for your daily shopping or message us to ask about product availability.</p></div>
+  <div class="about-card"><h3>Why shop with us?</h3><p>🍃 A convenient neighborhood shop</p><p>🍬 Sweets and everyday essentials in one place</p><p>🤝 Friendly service you can count on</p><p>📱 Easy contact through WhatsApp</p></div>
+</section>
+<section class="contact" id="contact">
+  <div class="section-head"><div><h2>Visit or contact us</h2><p class="sub" style="color:#e3eee6">We’d be happy to hear from you.</p></div></div>
+  <div class="contact-grid">
+    <div class="contact-card"><h3>📍 Store location</h3><p>ADD YOUR FULL SHOP ADDRESS<br>City, Punjab, Pakistan</p><p><b>Phone:</b> ADD YOUR PHONE NUMBER</p></div>
+    <div class="contact-card"><h3>💬 WhatsApp us</h3><p>Ask about today's sweets, grocery prices, or product availability.</p><a class="btn" href="https://wa.me/923000000000?text=Assalam-o-Alaikum%2C%20Ahmad%20Sweets%20%26%20Karyana%20Store" target="_blank" rel="noopener">Message on WhatsApp</a></div>
+  </div>
+</section>
+</main>
+<footer><span>© <span id="year">2026</span> Ahmad Sweets & Karyana Store</span><span>Made for our local community</span></footer>
+</body>
+</html>
